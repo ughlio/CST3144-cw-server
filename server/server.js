@@ -5,6 +5,8 @@ const cors = require('cors');
 const { MongoClient, ObjectId } = require('mongodb');
 const setupLessonManagementDatabase = require('./setupDB');
 const morgan = require('morgan');
+const path = require('path');
+const fs = require('fs');
 
 
 
@@ -98,4 +100,21 @@ app.put('/lessons/:id', async (req, res) => {
         console.error(error);
         res.status(500).json({ error: 'Failed to update lesson' });
     }
+});
+
+// Custom middleware to serve lesson images
+app.get('/images/:imageName', (req, res, next) => {
+    const imageName = req.params.imageName;
+    const imagePath = path.join(__dirname, 'public', 'images', imageName);
+
+    // Check if the image file exists
+    fs.access(imagePath, fs.constants.F_OK, (err) => {
+        if (err) {
+            // File does not exist, send custom error message
+            res.status(404).json({ error: 'Image file not found' });
+        } else {
+            // File exists, send the image
+            res.sendFile(imagePath);
+        }
+    });
 });

@@ -9,7 +9,7 @@ const lessonsData = [
     { topic: 'History', location: 'Golders Green', price: 95, space: 5, imageUrl: 'images/history.png' },
     { topic: 'Geography', location: 'Mill Hill', price: 85, space: 5, imageUrl: 'images/geography.png' },
     { topic: 'Art', location: 'Finchley', price: 75, space: 5, imageUrl: 'images/art.png' },
-    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageUrl: 'images/mudic.png' },
+    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageUrl: 'images/music.png' },
     { topic: 'Coding', location: 'Colindale', price: 120, space: 5, imageUrl: 'images/coding.png' },
     { topic: 'French', location: 'Brent Cross', price: 100, space: 5, imageUrl: 'images/french.png' },
     { topic: 'Spanish', location: 'Golders Green', price: 90, space: 5, imageUrl: 'images/spanish.png' },

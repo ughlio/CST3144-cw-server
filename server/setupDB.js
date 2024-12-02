@@ -4,15 +4,15 @@ const uri = 'mongodb+srv://test:test@cluster0.zfnol.mongodb.net/';
 
 const lessonsData = [
     { topic: 'Math', location: 'Hendon', price: 100, space: 5, imageUrl: 'images/math.png' },
-    { topic: 'English', location: 'Colindale', price: 80, space: 5, imageUrl: '' },
-    { topic: 'Science', location: 'Brent Cross', price: 90, space: 5, imageUrl: '' },
-    { topic: 'History', location: 'Golders Green', price: 95, space: 5, imageUrl: '' },
-    { topic: 'Geography', location: 'Mill Hill', price: 85, space: 5, imageUrl: '' },
-    { topic: 'Art', location: 'Finchley', price: 75, space: 5, imageUrl: '' },
-    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageUrl: '' },
-    { topic: 'Coding', location: 'Colindale', price: 120, space: 5, imageUrl: '' },
-    { topic: 'French', location: 'Brent Cross', price: 100, space: 5, imageUrl: '' },
-    { topic: 'Spanish', location: 'Golders Green', price: 90, space: 5, imageUrl: '' },
+    { topic: 'English', location: 'Colindale', price: 80, space: 5, imageUrl: 'images/english.png' },
+    { topic: 'Science', location: 'Brent Cross', price: 90, space: 5, imageUrl: 'images/science.png' },
+    { topic: 'History', location: 'Golders Green', price: 95, space: 5, imageUrl: 'images/history.png' },
+    { topic: 'Geography', location: 'Mill Hill', price: 85, space: 5, imageUrl: 'images/geography.png' },
+    { topic: 'Art', location: 'Finchley', price: 75, space: 5, imageUrl: 'images/art.png' },
+    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageUrl: 'images/mudic.png' },
+    { topic: 'Coding', location: 'Colindale', price: 120, space: 5, imageUrl: 'images/coding.png' },
+    { topic: 'French', location: 'Brent Cross', price: 100, space: 5, imageUrl: 'images/french.png' },
+    { topic: 'Spanish', location: 'Golders Green', price: 90, space: 5, imageUrl: 'images/spanish.png' },
   ];
 
 const setupLessonManagementDatabase = async () => {

@@ -3,16 +3,16 @@ const { MongoClient } = require('mongodb');
 const uri = 'mongodb+srv://test:test@cluster0.zfnol.mongodb.net/';
 
 const lessonsData = [
-    { topic: 'Math', location: 'Hendon', price: 100, space: 5, imageUrl: 'images/math.png' },
-    { topic: 'English', location: 'Colindale', price: 80, space: 5, imageUrl: 'images/english.png' },
-    { topic: 'Science', location: 'Brent Cross', price: 90, space: 5, imageUrl: 'images/science.png' },
-    { topic: 'History', location: 'Golders Green', price: 95, space: 5, imageUrl: 'images/history.png' },
-    { topic: 'Geography', location: 'Mill Hill', price: 85, space: 5, imageUrl: 'images/geography.png' },
-    { topic: 'Art', location: 'Finchley', price: 75, space: 5, imageUrl: 'images/art.png' },
-    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageUrl: 'images/music.png' },
-    { topic: 'Coding', location: 'Colindale', price: 120, space: 5, imageUrl: 'images/coding.png' },
-    { topic: 'French', location: 'Brent Cross', price: 100, space: 5, imageUrl: 'images/french.png' },
-    { topic: 'Spanish', location: 'Golders Green', price: 90, space: 5, imageUrl: 'images/spanish.png' },
+    { topic: 'Math', location: 'Hendon', price: 100, space: 5, imageName: 'math.png' },
+    { topic: 'English', location: 'Colindale', price: 80, space: 5, imageName: 'english.png' },
+    { topic: 'Science', location: 'Brent Cross', price: 90, space: 5, imageName: 'science.png' },
+    { topic: 'History', location: 'Golders Green', price: 95, space: 5, imageName: 'history.png' },
+    { topic: 'Geography', location: 'Mill Hill', price: 85, space: 5, imageUrl: 'geography.png' },
+    { topic: 'Art', location: 'Finchley', price: 75, space: 5, imageName: 'art.png' },
+    { topic: 'Music', location: 'Hendon', price: 110, space: 5, imageName: 'music.png' },
+    { topic: 'Coding', location: 'Colindale', price: 120, space: 5, imageName: 'coding.png' },
+    { topic: 'French', location: 'Brent Cross', price: 100, space: 5, imageName: 'french.png' },
+    { topic: 'Spanish', location: 'Golders Green', price: 90, space: 5, imageName: 'spanish.png' },
   ];
 
 const setupLessonManagementDatabase = async () => {
